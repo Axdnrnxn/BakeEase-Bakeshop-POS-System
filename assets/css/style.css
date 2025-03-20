@@ -1,0 +1,548 @@
+ /* Add any additional CSS styles you need for the profile page here */
+ .profile-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .profile-section h3 {
+    margin-top: 0;
+  }
+  
+  .profile-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-section label {
+    margin-bottom: 5px;
+  }
+  
+  .profile-section input,
+  .profile-section textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .profile-section button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-section button:hover {
+    background-color: #555;
+  }
+  
+  
+  /* styles.css */
+  
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    background-image: url("bakery-hero.jpg"); /* Add your hero image here */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Product Gallery Styles */
+  .product-gallery {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-gallery h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Order Section Styles */
+  .order {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .order h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .order form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .order input, .order select, .order textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .order button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Loyalty Program Section Styles */
+  .loyalty {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .loyalty h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .loyalty p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .loyalty ol {
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .loyalty ol li {
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Section Styles */
+  .contact {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .main-content {
+      padding-bottom: 70px; /* Height of the footer (adjust as needed) */
+      margin-bottom: -70px;  /* Negative margin to pull up the container */
+  }
+  
+  footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0; 
+  }
+  /* Product Gallery Styles */
+  .product-gallery {
+    padding: 20px;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Product Card Styles */
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .availability {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card form {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .product-card .btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card .btn:hover {
+    background-color: #ff5c4d;
+  }
+  
+  .product-card .btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Navigation Toggle Styles */
+  .nav-toggle {
+    display: none; /* Hide by default on larger screens */
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .nav-toggle {
+        display: block;
+    }
+  
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    nav ul.active {
+        display: flex;
+    }
+  
+    nav ul li {
+        margin: 10px 0;
+    }
+  
+    /* Order Section Styles */
+  .order {
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .order h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+  }
+  
+  .order form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .order label {
+      margin-top: 10px;
+      font-weight: bold;
+  }
+  
+  .order input, .order select, .order textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+  .order button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  /* Loyalty Program Section Styles */
+  .loyalty {
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .loyalty h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+  }
+  
+  .loyalty p {
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+  
+  .loyalty ol {
+      text-align: left;
+      margin-left: 20px;
+  }
+  
+  .loyalty ol li {
+      margin-bottom: 10px;
+  }
+  
+  /* Contact Section Styles */
+  .contact {
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .contact h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+  }
+  
+  .contact-info {
+      margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+  
+  .contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .contact label {
+      margin-top: 10px;
+      font-weight: bold;
+  }
+  
+  .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+  .contact button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  /* styles.css */
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    nav ul li {
+        margin: 10px 0;
+    }
+  
+    .product-card {
+        width: 100%;
+    }
+  
+    .order form, .contact form {
+        width: 100%;
+    }
+  
+    .cart table {
+        width: 100%;
+    }
+  
+    .admin-dashboard form {
+        width: 100%;
+    }
+  
+    .admin-dashboard table {
+        width: 100%;
+    
+      }
+  /* Reviews Section Styles (Responsive) */
+  @media (max-width: 768px) { 
+    .reviews {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .reviews form, .reviews .review {
+        width: 100%; /* Make forms and reviews take full width */
+    }
+  
+    .reviews textarea {
+        height: 100px; /* Adjust textarea height for smaller screens */
+    }
+  
+    
+  }
+  
+  }
+  }
+  
+  
